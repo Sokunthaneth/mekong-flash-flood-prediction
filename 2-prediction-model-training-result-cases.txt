@@ -1,0 +1,33 @@
+The training result in the terminal shows the output of a machine learning model training process using TensorFlow and Keras. Here's a breakdown of the key parts:
+
+TensorFlow Initialization Messages:
+
+TensorFlow is informing you about the use of oneDNN custom operations and CPU optimizations.
+Training Epochs:
+
+The model is trained over 20 epochs. Each epoch represents one complete pass through the training dataset.
+For each epoch, the following metrics are displayed:
+accuracy: The accuracy of the model on the training data.
+loss: The loss value on the training data.
+val_accuracy: The accuracy of the model on the validation data.
+val_loss: The loss value on the validation data.
+Warnings:
+
+There are warnings about the use of input_shape/input_dim in Sequential models.
+Warnings from sklearn about precision being ill-defined for labels with no predicted samples.
+Final Evaluation:
+
+After training, the model is evaluated on a test set.
+The classification report shows precision, recall, and f1-score for each class (0 and 1).
+precision: The ratio of true positive predictions to the total predicted positives.
+recall: The ratio of true positive predictions to the total actual positives.
+f1-score: The harmonic mean of precision and recall.
+support: The number of true instances for each class.
+The overall accuracy of the model is 0.91 (91%).
+Model Saving Warning:
+
+A warning about saving the model in HDF5 format, suggesting using the native Keras format instead.
+Summary
+The model has high accuracy (91%) but struggles with class imbalance, as indicated by the low precision and recall for class 1.
+The training and validation loss values fluctuate, indicating potential overfitting or underfitting.
+Consider addressing class imbalance and improving model performance on the minority class.
