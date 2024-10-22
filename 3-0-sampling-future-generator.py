@@ -78,5 +78,5 @@ df_flash_floods = pd.DataFrame({
 })
 
 # Save the final dataset with flash flood events to a CSV file
-csv_file_path_flash_floods = 'mekong_water_level_future_data.csv'
+csv_file_path_flash_floods = '3-0-mekong-water-level-future-data.csv'
 df_flash_floods.to_csv(csv_file_path_flash_floods, index=False)

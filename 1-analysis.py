@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the data
-csv_file_path = 'mekong_water_level_forecast_2024_flash_floods.csv'
+csv_file_path = '0-mekong-water-level-forecast-2024-flash-floods.csv'
 df = pd.read_csv(csv_file_path)
 
 # Combine date and time into a single datetime column
