@@ -16,7 +16,7 @@ plt.plot(df.index, df['water level (cm)'], label='Water Level (cm)', color='b')
 plt.plot(df.index, df['prediction'], label='Prediction', color='r', linestyle='--')
 
 # Add titles and labels
-plt.title('Water Level and Flash Flood Prediction')
+plt.title('Mekong Water Level 2025 and Flash Flood Prediction')
 plt.xlabel('Datetime')
 plt.ylabel('Water Level (cm) / Prediction')
 plt.legend()

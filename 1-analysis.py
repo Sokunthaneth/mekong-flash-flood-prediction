@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the data
-csv_file_path = '0-mekong-water-level-forecast-2024-flash-floods.csv'
+csv_file_path = '3-0-mekong-water-level-future-data.csv'
 df = pd.read_csv(csv_file_path)
 
 # Combine date and time into a single datetime column
@@ -16,7 +16,7 @@ plt.figure(figsize=(12, 6))
 plt.plot(df.index, df['water level (cm)'], label='Water Level (cm)')
 plt.xlabel('Date and Time')
 plt.ylabel('Water Level (cm)')
-plt.title('Mekong Water Level Forecast 2024 with Flash Floods')
+plt.title('Mekong Water Level Forecast 2025 with Flash Floods')
 plt.legend()
 plt.grid(True)
 plt.show()

@@ -9,8 +9,8 @@ from tensorflow.keras.optimizers import Adam
 import joblib
 
 # Load the training and test data
-train_data = pd.read_csv('train-test-split-data/training-data.csv')
-test_data = pd.read_csv('train-test-split-data/test-data.csv')
+train_data = pd.read_csv('0-1-train-test-split-data/training-data.csv')
+test_data = pd.read_csv('0-1-train-test-split-data/test-data.csv')
 
 
 # Preprocess the data
